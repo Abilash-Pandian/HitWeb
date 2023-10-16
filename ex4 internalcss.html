@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hit'em Up</title>
+    <style>
+        body {
+            background-color: rgb(0, 0, 0);
+        }
+        h1 {
+            text-align: center;
+            color: darkgreen;
+            background-color: chartreuse;
+        }
+        h2 {
+            text-align: center;
+            color: whitesmoke;
+            font-style: italic;
+        }
+        .blink {
+            text-align: center;
+            color: rgb(248, 7, 7);
+            animation: blinker 1s linear infinite;
+            font-size: xx-large ;
+        }
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+        .profile-container {
+            display: flex;
+            justify-content: flex-start;
+        }
+        .profile {
+            background-color: #4c624b;
+            max-width: 400px;
+            margin: 20px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .profile img {
+            position: relative;
+            max-width: 40%;
+            border-radius: 50%;
+        }
+        .profile h4 {
+            text-align: center;
+            color: rgb(133, 144, 133);
+            background-color: rgb(7, 7, 7);
+        }
+        .profile p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .container2 {
+            background-color: #4c624b;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="tel"],
+        textarea {
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #ff0000;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Top Hit Service Website</h1>
+        <h2>We Don't Miss: Aiming for Your Satisfaction</h2>
+        <h3 class="blink"> Select Agent</h3>
+        <div class="profile-container">
+            <div class="profile" id="profile1">
+                <img src="C:\\Users\\Abilash Pandian\\OneDrive\\Pictures\\santyjpg.jpg" alt="User Profile Image 1">
+                <h4>SantMan</h4>
+                <p>Specialized In: Abduction, Strangulation,and all close range attcks</p>
+                <p>About: 8 years of experiance.He expels aggressors with deadly precision.</p>
+                <p>Fee: $75,000</p>
+                <button type="select">SELECT</button>
+            </div>
+    
+            <div class="profile" id="profile2">
+                <img src="C:\\Users\\Abilash Pandian\\OneDrive\\Pictures\\suganesh.jpg" alt="User Profile Image 2">
+                <h4>Oversight</h4>
+                <p>Specialized In: Explosives</p>
+                <p>About: The damage and disruption he inflicts ensures no fight is ever fair.</p>
+                <p>Fee: $1,20,000</p>
+                <button type="select">SELECT</button>
+            </div>
+    
+            <div class="profile" id="profile3">
+                <img src="C:\\Users\\Abilash Pandian\\OneDrive\\Pictures\\WhatsApp Image 2023-09-03 at 16.10.26.jpg" alt="User Profile Image 3">
+                <h4>Knight</h4>
+                <p>Specialized In: Long range attacks</p>
+                <p>About: Tracks, finds, and eliminates enemies with ruthless efficiency and precision.</p>
+                <p>Fee: $30,000</p>
+                <button type="select">SELECT</button>
+            </div>
+        </div>
+        <h5 class="blink">Provide Target Details</h5>   
+        <div class="container2">
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="visit">Places he/she often visit:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+</body>
+</html>
